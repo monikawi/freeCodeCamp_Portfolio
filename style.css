@@ -9,30 +9,34 @@ body {
   	margin: 0;
   	padding: 0;
   	overflow: hidden;
-  	background-color: #333;
+  	background-color: #201F1F;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	border-bottom: 10px solid black;
 }
 
-li {
+#navbar li {
   	float: right;
 }
 
-#welcome {
+#navbar li:first-child {
 	float: left;
 }
 
-li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-li a:hover {
-  background-color: #111;
+#navbar li a:hover {
+  	background-color: #111;
+  	color: #FFD700;
 }
 
 #welcome-section {
@@ -48,27 +52,43 @@ li a:hover {
 	color: white;
 }
 
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 #projects {
 	display: grid;
 	grid-template-columns: ;
 	grid-template-rows: ; 
 	background-image: url("rawpixel-577494-unsplash.jpg");
 	background-attachment: fixed;
+	padding: 50px;
+	padding-top: 20px;
 }
 
 #about {
-	background: grey;
-	height: 50vh;
+	background-image: url("rawpixel-577494-unsplash-bluedark.jpg");
+	background-attachment: fixed;
+	padding: 50px;
+	padding-top: 20px;
 }
 
 #contact {
 	background: dimgrey;
-	height: 30vh;
  	background-image: url("sharad-bhat-1224523-unsplash.jpg");
     background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
+	text-align: center;
+	padding: 10px;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
 }
 
 @media screen and (max-width: 600px) {
@@ -83,3 +103,12 @@ a {
 #mail {
 	text-decoration: underline;
 }
+
+.yellow-text {
+	color: #FFD700;
+}
+
+.blue-text {
+	color: #008080;
+}
+
